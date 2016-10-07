@@ -23,21 +23,26 @@ html
 					ul.nav.navbar-nav.navbar-right
 						li.hidden
 							a(href='#page-top')
-						li
-							a.page-scroll(href='#services') Services
-						li
-							a.page-scroll(href='#portfolio') Portfolio
-						li
-							a.page-scroll(href='#about') About
+						li(class=(title === 'About' ? 'active' : ''))
+							a(href='/about') About
+						li(class=(title === 'Services' ? 'active' : ''))
+							a(href='/services') Services
+						li(class=(title === 'Consultation' ? 'active' : ''))
+							a(href='/consultation') Consultation
 						li
 							a.page-scroll(href='#team') Team
 						li
-							a.page-scroll(href='#contact') Contact
+							a.page-scroll(href='#wayne-tower') Wayne Tower
+						li
+							a.page-scroll(href='#wayne-foundation') Wayne Foundation
+						li
+							a.page-scroll(href='#wayne-technologies') Wayne Technologies
 				// /.navbar-collapse
 			// /.container-fluid
 
 		block content
 		// FOOTER
+		hr.featurette-divider
 		footer
 			p.pull-right
 				a(href='#') Back to top

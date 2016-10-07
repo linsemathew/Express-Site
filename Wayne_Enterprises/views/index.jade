@@ -16,19 +16,19 @@ block content
 				.container
 					.carousel-caption
 						p
-							a.btn.btn-lg.btn-primary(href='#', role='button') About Wayne Enterprises
+							a.btn.btn-lg.btn-primary.top(href='#', role='button') About Wayne Enterprises
 			.item
 				img.second-slide(src='../images/meeting.jpg', alt='Second slide')
 				.container
 					.carousel-caption
 						p
-							a.btn.btn-lg.btn-primary(href='#', role='button') Services
+							a.btn.btn-lg.btn-primary.top(href='#', role='button') Services
 			.item
 				img.third-slide(src='../images/contact.jpg', alt='Third slide')
 				.container
 					.carousel-caption
 						p
-							a.btn.btn-lg.btn-primary(href='#', role='button') Request A Consultation
+							a.btn.btn-lg.btn-primary.top(href='#', role='button') Request A Consultation
 		a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
 			span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
 			span.sr-only Previous
@@ -36,72 +36,96 @@ block content
 			span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
 			span.sr-only Next
 	// /.carousel
+	ul.home-links
+		li
+			a.btn.btn-lg.btn-primary(href='#', role='button') About Wayne Enterprises
+		li
+			a.btn.btn-lg.btn-primary(href='#', role='button') Services
+		li
+			a.btn.btn-lg.btn-primary(href='#', role='button') Request A Consultation
 	//
 		Marketing messaging and featurettes
 		==================================================
 	// Wrap the rest of the page in another container to center all the content.
 	section#team
-		hr.featurette-divider
+		hr.featurette-divider#first-divider
 		.row.featurette
 			.container.marketing
 				// Three columns of text below the carousel
 				.row
 					.col-lg-4
-						img.img-circle(src='../images/bwayne.jpg', alt='Generic placeholder image', width='140', height='140')
-						h2 Bruce Wayne - CEO
+						br
+						img.img-circle(src='../images/bwayne.jpg', alt='Bruce Wayne', width='140', height='140')
+						h2 Bruce Wayne
+						h3 
+							| CEO
+						br
 						p
 							| Billionaire industrialist, philanthropist, and notorious playboy.
+						br
 						p
 							a.btn.btn-lg.btn-primary(href='#', role='button') View Bio »
 					// /.col-lg-4
 					.col-lg-4
-						img.img-circle(src='../images/lfox.jpg', alt='Generic placeholder image', width='140', height='140')
-						h2 Lucius Fox - CFO
+						br
+						img.img-circle(src='../images/lfox.jpg', alt='Lucius Fox', width='140', height='140')
+						h2 Lucius Fox 
+						h3 CFO
+						br
 						p
 							| Experienced businessman, entrepreneur, and inventor.
+						br
 						p
 							a.btn.btn-lg.btn-primary(href='#', role='button') View Bio »
 					// /.col-lg-4
 					.col-lg-4
-						img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-						h2 Linse Mathew - Vice President
+						br
+						img.img-circle(src='../images/lmathew.png', alt='L Mathew', width='140', height='140')
+						h2 Linse Mathew 
+						h3 COO
+						br
 						p
-							| Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+							| Full-stack web developer, fantasy football enthusiast, and Batman fan. 
+						br
 						p
 							a.btn.btn-lg.btn-primary(href='#', role='button') View Bio »
 			// /.col-lg-4
 		// /.row
 		// START THE FEATURETTES
-		hr.featurette-divider
-		.row.featurette
-			.col-md-7
-				h2.featurette-heading
-					| First featurette heading. 
-					span.text-muted It'll blow your mind.
-				p.lead
-					| Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-			.col-md-5
-				img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='500x500', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1Nzk5NjA5MjExIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU3OTk2MDkyMTEiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=', data-holder-rendered='true')
-		hr.featurette-divider
-		.row.featurette
-			.col-md-7.col-md-push-5
-				h2.featurette-heading
-					| Oh yeah, it's that good. 
-					span.text-muted See for yourself.
-				p.lead
-					| Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-			.col-md-5.col-md-pull-7
-				img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='500x500', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1Nzk5NjA5MjExIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU3OTk2MDkyMTEiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=', data-holder-rendered='true')
-		section#contact
+		section#wayne-tower
 			hr.featurette-divider
 			.row.featurette
 				.col-md-7
 					h2.featurette-heading
-						| And lastly, this one. 
-						span.text-muted Checkmate.
+						| Wayne Tower 
+						br
+						span.text-muted Aka "Old Wayne Tower"
 					p.lead
-						| Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+						|  Built in 1888 by Alan Wayne. After its construction, the tower was the tallest building in Gotham City. Built as a symbol to welcome all of those who enter the city, Wayne Tower has 13 gargoyles or "guardians", watching the 13 ways into Gotham City. 
 				.col-md-5
-					img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='500x500', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1Nzk5NjA5MjExIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU3OTk2MDkyMTEiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=', data-holder-rendered='true')
+					img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='500x500', src='../images/tower.jpg')
+		section#wayne-foundation
 			hr.featurette-divider
+			.row.featurette
+				.col-md-7.col-md-push-5
+					h2.featurette-heading
+						| Wayne Foundation
+						br
+						span.text-muted People First
+					p.lead
+						| Established to enhance healthcare and reduce extreme poverty, to expand educational opportunities and access to information technology, and to fund scientific research and help altruistic people with research by providing facilities and training. 
+				.col-md-5.col-md-pull-7
+					img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='500x500', src='../images/charity.jpg')
+		section#wayne-technologies
+			hr.featurette-divider
+			.row.featurette
+				.col-md-7
+					h2.featurette-heading
+						| Wayne Technologies
+						br
+						span.text-muted Aka "WayneTech"
+					p.lead
+						| The biggest division of Wayne Enterprises. It is involved in the retrieval and research of alien technology. Its main rival is LexCorp. The subsidiary is sometimes used by Batman as a means to acquire new technologies.
+				.col-md-5
+					img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='500x500', src='../images/tech.jpg')
 			// /END THE FEATURETTES
