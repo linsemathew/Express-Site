@@ -12,34 +12,23 @@ block content
 			li(data-target='#myCarousel', data-slide-to='2')
 		.carousel-inner(role='listbox')
 			.item.active
-				img.first-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='First slide')
+				img.first-slide(src='../images/building.jpg', alt='First slide')
 				.container
 					.carousel-caption
-						h1 Example headline.
 						p
-							| Note: If you're viewing this page via a 
-							code file://
-							|  URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
-						p
-							a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
+							a.btn.btn-lg.btn-primary(href='#', role='button') About Wayne Enterprises
 			.item
-				img.second-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Second slide')
+				img.second-slide(src='../images/meeting.jpg', alt='Second slide')
 				.container
 					.carousel-caption
-						h1 Another example headline.
 						p
-							| Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						p
-							a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
+							a.btn.btn-lg.btn-primary(href='#', role='button') Services
 			.item
-				img.third-slide(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Third slide')
+				img.third-slide(src='../images/contact.jpg', alt='Third slide')
 				.container
 					.carousel-caption
-						h1 One more for good measure.
 						p
-							| Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						p
-							a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+							a.btn.btn-lg.btn-primary(href='#', role='button') Request A Consultation
 		a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
 			span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
 			span.sr-only Previous
@@ -51,32 +40,35 @@ block content
 		Marketing messaging and featurettes
 		==================================================
 	// Wrap the rest of the page in another container to center all the content.
-	.container.marketing
-		// Three columns of text below the carousel
-		.row
-			.col-lg-4
-				img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-				h2 Heading
-				p
-					| Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-				p
-					a.btn.btn-default(href='#', role='button') View details »
-			// /.col-lg-4
-			.col-lg-4
-				img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-				h2 Heading
-				p
-					| Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-				p
-					a.btn.btn-default(href='#', role='button') View details »
-			// /.col-lg-4
-			.col-lg-4
-				img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-				h2 Heading
-				p
-					| Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-				p
-					a.btn.btn-default(href='#', role='button') View details »
+	section#team
+		hr.featurette-divider
+		.row.featurette
+			.container.marketing
+				// Three columns of text below the carousel
+				.row
+					.col-lg-4
+						img.img-circle(src='../images/bwayne.jpg', alt='Generic placeholder image', width='140', height='140')
+						h2 Bruce Wayne - CEO
+						p
+							| Billionaire industrialist, philanthropist, and notorious playboy.
+						p
+							a.btn.btn-lg.btn-primary(href='#', role='button') View Bio »
+					// /.col-lg-4
+					.col-lg-4
+						img.img-circle(src='../images/lfox.jpg', alt='Generic placeholder image', width='140', height='140')
+						h2 Lucius Fox - CFO
+						p
+							| Experienced businessman, entrepreneur, and inventor.
+						p
+							a.btn.btn-lg.btn-primary(href='#', role='button') View Bio »
+					// /.col-lg-4
+					.col-lg-4
+						img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
+						h2 Linse Mathew - Vice President
+						p
+							| Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+						p
+							a.btn.btn-lg.btn-primary(href='#', role='button') View Bio »
 			// /.col-lg-4
 		// /.row
 		// START THE FEATURETTES
@@ -100,15 +92,16 @@ block content
 					| Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
 			.col-md-5.col-md-pull-7
 				img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='500x500', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1Nzk5NjA5MjExIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU3OTk2MDkyMTEiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=', data-holder-rendered='true')
-		hr.featurette-divider
-		.row.featurette
-			.col-md-7
-				h2.featurette-heading
-					| And lastly, this one. 
-					span.text-muted Checkmate.
-				p.lead
-					| Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-			.col-md-5
-				img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='500x500', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1Nzk5NjA5MjExIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU3OTk2MDkyMTEiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=', data-holder-rendered='true')
-		hr.featurette-divider
-		// /END THE FEATURETTES
+		section#contact
+			hr.featurette-divider
+			.row.featurette
+				.col-md-7
+					h2.featurette-heading
+						| And lastly, this one. 
+						span.text-muted Checkmate.
+					p.lead
+						| Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+				.col-md-5
+					img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='500x500', src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1Nzk5NjA5MjExIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU3OTk2MDkyMTEiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=', data-holder-rendered='true')
+			hr.featurette-divider
+			// /END THE FEATURETTES
